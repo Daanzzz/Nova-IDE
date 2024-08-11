@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Client.src.gui.NewFile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Client.src.gui"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Image Source="/img/new_file.png" HorizontalAlignment="Left" Margin="198,-21,0,353" RenderTransformOrigin="0.492,0.385" Width="356"/>
+
+        <Image Source="/img/button.png" HorizontalAlignment="Left" Margin="306,322,0,-16" RenderTransformOrigin="0.492,0.385" Width="204" />
+        <TextBlock Text="Done" HorizontalAlignment="Center"  VerticalAlignment="Top"  FontSize="20"  FontWeight="Bold" Opacity="0.9" Foreground="#D0D0D0" Margin="10,363,0,0" RenderTransformOrigin="0.195,0.837" />
+        <Button BorderThickness="0" Background="Transparent" Margin="306,363,274,26" Opacity="0" Click="done" Cursor="Hand"/>
+        <Image Margin="55,160,384,200" Source="/img/border.png" Stretch="Fill"/>
+        <TextBox x:Name="filename" Width="349" Height="41" BorderThickness="0" VerticalAlignment="Top" FontSize="25" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="59,172,0,0" FontWeight="Bold" Background="Transparent"/>
+        <TextBlock Text="New file name:" HorizontalAlignment="Left"  VerticalAlignment="Top"  FontSize="25"  FontWeight="Bold" Opacity="0.9" Foreground="#D0D0D0" Margin="59,132,0,0" Height="46" Width="258"/>
+
+        <!-- Adding ComboBox for file extension choice -->
+        <ComboBox x:Name="extensionComboBox" Background="Purple" FontSize="28"  HorizontalAlignment="Left" Margin="421,165,0,0" VerticalAlignment="Top" Width="133" Height="48">
+            <ComboBoxItem Content=".cpp"/>
+            <ComboBoxItem Content=".h"/>
+        </ComboBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <PackageIcon>NovaTransparent.png</PackageIcon>
+    <ApplicationIcon>img\novaico.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\arrowLeft.png" />
+    <None Remove="img\border.png" />
+    <None Remove="img\button.png" />
+    <None Remove="img\c.png" />
+    <None Remove="img\cpp.png" />
+    <None Remove="img\cpp2.png" />
+    <None Remove="img\createNewProject.png" />
+    <None Remove="img\deleteFile.png" />
+    <None Remove="img\emailVer.png" />
+    <None Remove="img\folder.png" />
+    <None Remove="img\homeIcon.png" />
+    <None Remove="img\language.png" />
+    <None Remove="img\Login.png" />
+    <None Remove="img\newfile.png" />
+    <None Remove="img\new_file.png" />
+    <None Remove="img\NovaFull.png" />
+    <None Remove="img\novaico.ico" />
+    <None Remove="img\openfile.png" />
+    <None Remove="img\passwordRec.png" />
+    <None Remove="img\projectDirectory.png" />
+    <None Remove="img\projectName.png" />
+    <None Remove="img\py.png" />
+    <None Remove="img\requestV.png" />
+    <None Remove="img\Signup.png" />
+    <None Remove="img\StartSession.png" />
+    <None Remove="img\underWork.png" />
+    <None Remove="img\v.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
+    <PackageReference Include="WindowsAPICodePack" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\arrowLeft.png" />
+    <Resource Include="img\border.png" />
+    <Resource Include="img\button.png" />
+    <Resource Include="img\c.png" />
+    <Resource Include="img\cpp.png" />
+    <Resource Include="img\createNewProject.png" />
+    <Resource Include="img\deleteFile.png" />
+    <Resource Include="img\emailVer.png" />
+    <Resource Include="img\folder.png" />
+    <Resource Include="img\homeIcon.png" />
+    <Resource Include="img\language.png" />
+    <Resource Include="img\Login.png" />
+    <Resource Include="img\newfile.png" />
+    <Resource Include="img\new_file.png" />
+    <Resource Include="img\NovaFull.png" />
+    <Resource Include="img\novaico.ico" />
+    <Resource Include="img\NovaTransparent.png" />
+    <Resource Include="img\openfile.png" />
+    <Resource Include="img\passwordRec.png" />
+    <Resource Include="img\projectDirectory.png" />
+    <Resource Include="img\projectName.png" />
+    <Resource Include="img\py.png" />
+    <Resource Include="img\requestV.png" />
+    <Resource Include="img\Signup.png" />
+    <Resource Include="img\StartSession.png" />
+    <Resource Include="img\underWork.png" />
+    <Resource Include="img\v.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="img\NovaTransparent.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

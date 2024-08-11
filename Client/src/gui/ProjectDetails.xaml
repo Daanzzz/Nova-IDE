@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Client.ProjectDetails"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+
+
+    <Grid>
+        <Image Source="/img/createNewProject.png" HorizontalAlignment="Center" Margin="0,-59,0,236" RenderTransformOrigin="0.492,0.385" Width="472" />
+        <Image Source="/img/projectName.png" HorizontalAlignment="Left" Margin="45,64,0,246" RenderTransformOrigin="0.492,0.385" Width="241"/>
+        <Image Source="/img/projectDirectory.png" HorizontalAlignment="Left" Margin="45,189,0,75" RenderTransformOrigin="0.492,0.385" Width="290"/>
+
+
+
+        <Image Source="/img/homeIcon.png" HorizontalAlignment="Left" Margin="764,381,0,3" RenderTransformOrigin="0.492,0.385" Width="68"/>
+        <Image Source="/img/arrowLeft.png" HorizontalAlignment="Left" Margin="718,381,0,-3" RenderTransformOrigin="0.492,0.385" Width="86"/>
+        <Button BorderThickness="0" Background="Transparent" Margin="768,390,5,12" Opacity="0" Click="HomeButton_Click" Cursor="Hand"/>
+        <Button BorderThickness="0" Background="Transparent" Margin="718,394,46,10" Opacity="0" Click="backButton_Click" Cursor="Hand"/>
+        <Image Margin="45,171,179,186" Source="/img/border.png" Stretch="Fill"/>
+        <Image Margin="626,295,107,67" Source="/img/folder.png" Stretch="Fill"/>
+        <Image Margin="45,295,179,62" Source="/img/border.png" Stretch="Fill"/>
+
+
+        <TextBlock x:Name="PathUi" HorizontalAlignment="Left"  VerticalAlignment="Top"  FontSize="20"  FontWeight="Bold" Opacity="0.9" Foreground="#b4abc9" Margin="49,308,0,0" Height="61" Width="562"><Run Text=""/><LineBreak/><Run/></TextBlock>
+
+        <Button BorderThickness="0" Background="Transparent" Margin="626,305,107,77" Opacity="0" Click="SelectDirectoryButton_Click" Cursor="Hand"/>
+        <TextBox x:Name="textInput" Width="562" Height="44" BorderThickness="0" VerticalAlignment="Top" FontSize="25" Foreground="#b4abc9" HorizontalAlignment="Left" Margin="49,179,0,0" FontWeight="Bold" Text="New Project" Background="Transparent"/>
+        <Image Source="/img/button.png" HorizontalAlignment="Left" Margin="306,322,0,-16" RenderTransformOrigin="0.492,0.385" Width="204" />
+
+        <TextBlock Text="Done" HorizontalAlignment="Center"  VerticalAlignment="Top"  FontSize="20"  FontWeight="Bold" Opacity="0.9" Foreground="#b4abc9" Margin="10,363,0,0" RenderTransformOrigin="0.195,0.837" />
+        <Button BorderThickness="0" Background="Transparent" Margin="306,342,274,26" Opacity="0" Click="done" Cursor="Hand"/>
+        
+
+
+
+
+    </Grid>
+</UserControl>
